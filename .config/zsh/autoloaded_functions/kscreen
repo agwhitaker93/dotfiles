@@ -1,0 +1,4 @@
+for arg in $@; do
+    screen -S $arg -X quit
+done
+

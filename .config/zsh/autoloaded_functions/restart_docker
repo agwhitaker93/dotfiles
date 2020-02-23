@@ -1,0 +1,31 @@
+if [[ "$#" -ge 1 ]]; then
+    for arg in $@; do
+        case ${arg} in
+            /*)
+                zsh -c "cd ${arg} && restart_docker"
+                ;;
+            *)
+                zsh -c "cd $HOME/Dev/${arg} && restart_docker"
+                ;;
+            esac
+    done
+else
+    docker-compose ps > /dev/null 2> /dev/null
+    if [[ ! "$?" = 0 ]]; then
+        echo "No docker-compose.yml file found here. Aborting"
+        return
+    fi
+
+    if [[ -e "stop.sh" ]]; then
+        ./stop.sh
+    else
+        docker-compose stop
+    fi
+
+    if [[ -e "start.sh" ]]; then
+        ./start.sh
+    else
+        docker-compose up -d
+    fi
+fi
+

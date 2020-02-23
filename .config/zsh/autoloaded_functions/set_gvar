@@ -1,0 +1,5 @@
+vars="${@:2}"
+gvar="export $1=${vars// /:}"
+echo "${gvar}" >> ~/.config/zsh/global_vars.zsh
+eval "${gvar}"
+

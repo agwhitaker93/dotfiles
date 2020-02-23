@@ -1,0 +1,2 @@
+screen -S $1 -dm zsh -c "${@:2} ; zsh"
+

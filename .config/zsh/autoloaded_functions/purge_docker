@@ -1,0 +1,10 @@
+echo sure?
+read input
+
+if [[ "${input}" != "y" ]]; then
+    return 0
+fi
+
+docker rm $(docker ps -a -q) -f
+docker volume prune
+
