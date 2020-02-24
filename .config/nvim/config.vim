@@ -4,17 +4,15 @@ if !exists("g:syntax_on") "set syntax highlighting if not already set"
     syntax enable
 endif
 
+" disable mouse
+set mouse=
+
 " make whitespace easier to see
 set list
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 
 " set clipboard to use + register (ctrl+v ctrl+c)
 set clipboard=unnamedplus
-
-"-----Convenience-----"
-" show current mode
-" don't need this with airline
-"set showmode
 
 " turn hybrid line numbers on
 set number relativenumber
@@ -26,12 +24,17 @@ set ai ts=4 expandtab
 set shiftwidth=4
 
 " LSP stuff
+set cmdheight=2
+set signcolumn=yes
 let g:deoplete#enable_at_startup = 1
 let g:echodoc#enable_at_startup = 1
 let g:echodoc#type = 'signature'
 
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['solargraph'],
+    \ 'java': ['/usr/local/bin/jdt-ls', '-data', getcwd()],
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'typescript': ['javascript-typescript-stdio'],
     \ }
-    "\ 'java': ['/usr/local/bin/jdtls', '-data', getcwd()],
 
