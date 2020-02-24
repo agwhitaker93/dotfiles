@@ -32,8 +32,8 @@ let g:echodoc#type = 'signature'
 
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['solargraph'],
-    \ 'java': ['/usr/local/bin/jdt-ls', '-data', getcwd()],
-    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'java': ['jdt-ls', '-data', getcwd()],
+    \ 'python': ['pyls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'vue': ['vls'],
