@@ -1,0 +1,14 @@
+interval=5
+command=$@
+if [[ "$#" -ge 1 ]]; then
+    if [[ $1 = <-> ]]; then
+        interval=$1
+        command=${@:2}
+    fi
+fi
+while true; do
+    clear
+    date
+    eval $[command]
+    sleep $interval
+done
