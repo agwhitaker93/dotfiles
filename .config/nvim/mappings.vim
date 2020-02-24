@@ -50,6 +50,10 @@ nmap <F7> :RandomColorScheme<CR>
 " S-F8 already does :PrevColorSchene<CR>
 " F9 already does :BlacklistAddColorScheme<CR>
 
+" deoplete
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 " LSP mappings
 nnoremap <leader>ld :call LanguageClient#textDocument_definition()<CR>
 nnoremap <leader>lr :call LanguageClient#textDocument_rename()<CR>
