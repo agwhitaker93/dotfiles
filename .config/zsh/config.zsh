@@ -1,6 +1,6 @@
 unsetopt autocd
 
-source ${ZSH_CONF}/antigen-conf.zsh || touch ${ZSH_CONF}/antigen-conf.zsh
+source ${ZSH_CONF}/antigen-conf.zsh
 
 source ${ZSH_CONF}/aws_profile.zsh || touch ${ZSH_CONF}/aws_profile.zsh
 
