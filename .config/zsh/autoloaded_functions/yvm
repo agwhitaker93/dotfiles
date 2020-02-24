@@ -1,0 +1,3 @@
+export YVM_DIR=/home/andrew/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh && yvm $@
+
