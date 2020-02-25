@@ -9,6 +9,7 @@ Plug 'vim-scripts/xoria256.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'mswift42/vim-themes'
+Plug 'jaredgorski/SpaceCamp'
 
 Plug 'kien/rainbow_parentheses.vim'
 

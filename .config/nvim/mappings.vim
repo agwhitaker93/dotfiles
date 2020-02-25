@@ -15,26 +15,40 @@ nmap <Leader>bb :Buffers<CR>
 " tab convenience
 nmap <Leader>tn :tabnext<CR>
 nmap <Leader>tp :tabprevious<CR>
-nmap <Leader>tN :tabnew<CR>
+nmap <Leader>tt :tabnew<CR>
 nmap <Leader>td :tabclose<CR>
 
 " Ctags :D
-nmap <Leader>ct :Tags<CR>
+nmap <Leader>T :Tags<CR>
 
-" files
+" file stuff
+nmap <Leader>fl :Ex<CR>
+nmap <Leader>fd :cd %:h<CR>
 nmap <Leader>ff :Files<CR>
+nmap <Leader>fr :Ntree 
 
-" toggle line numbers to make copying easier
-nmap <Leader>ln :set invnumber invrelativenumber<CR>
+" editor mappings
+nmap <Leader>en :set invnumber invrelativenumber<CR>
 
-" MYVIMRC stuff
-nmap <Leader>eb :vsp $MYVIMRC<CR>
-nmap <Leader>er :source $MYVIMRC<CR>
+" vim mappings
+nmap <Leader>ve :vsp $MYVIMRC<CR>
+nmap <Leader>vr :source $MYVIMRC<CR>
+
+" Show me my mappings
+nmap <Leader>mM :Maps<CR>'space>
+nmap <Leader>mb :Maps<CR>'space>b
+nmap <Leader>me :Maps<CR>'space>e
+nmap <Leader>mf :Maps<CR>'space>f
+nmap <Leader>ml :Maps<CR>'space>l
+nmap <Leader>mt :Maps<CR>'space>t
+nmap <Leader>mT :Maps<CR>'space>T
+nmap <Leader>mv :Maps<CR>'space>v
+nmap <Leader>mw :Maps<CR>'space>w
 
 " search my available commands
 nmap <Leader><Leader> :Commands<CR>
 
-" Disable arrow keys completely?
+" Disable arrow keys completely
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
