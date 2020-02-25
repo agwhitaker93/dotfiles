@@ -23,6 +23,12 @@ set ai ts=4 expandtab
 " set width to 4 spaces, prevents double tab insertion
 set shiftwidth=4
 
+" netrw
+let g:netrw_liststyle=3
+
+" Language plugins
+let g:sql_type_default = 'pgsql'
+
 " LSP stuff
 set cmdheight=2
 set signcolumn=yes
