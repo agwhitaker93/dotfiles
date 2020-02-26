@@ -41,12 +41,12 @@ let g:echodoc#enable_at_startup = 1
 let g:echodoc#type = 'signature'
 
 let g:LanguageClient_serverCommands = {
-    \ 'ruby': ['solargraph'],
-    \ 'java': ['jdt-ls', '-data', getcwd()],
-    \ 'python': ['pyls'],
-    \ 'javascript': ['javascript-typescript-stdio'],
-    \ 'typescript': ['javascript-typescript-stdio'],
-    \ 'vue': ['vls'],
+    \ 'ruby': ['$HOME/.rvm/gems/ruby-head/bin/solargraph'],
+    \ 'java': ['/usr/local/bin/jdtls', '-data', getcwd()],
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'typescript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'vue': ['/usr/local/bin/vls'],
     \ 'crystal': ['$HOME/Dev/scry/bin/scry'],
     \ }
 

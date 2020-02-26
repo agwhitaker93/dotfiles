@@ -29,6 +29,7 @@ nmap <Leader>fr :Ntree
 
 " editor mappings
 nmap <Leader>en :set invnumber invrelativenumber<CR>
+nmap <Leader>es /<C-R>+<CR>
 
 " vim mappings
 nmap <Leader>ve :vsp $MYVIMRC<CR>
