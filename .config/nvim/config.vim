@@ -23,6 +23,10 @@ set ai ts=4 expandtab
 " set width to 4 spaces, prevents double tab insertion
 set shiftwidth=4
 
+" colors!
+colorscheme xoria256
+let g:airline_theme='fruit_punch'
+
 " netrw
 let g:netrw_liststyle=3
 

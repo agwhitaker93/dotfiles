@@ -3,13 +3,17 @@ call plug#begin(stdpath('config') . '/plugged')
 " My plugins
 " status line
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Colorschemes
-Plug 'vim-scripts/xoria256.vim'
-Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 Plug 'mswift42/vim-themes'
+Plug 'vim-scripts/xoria256.vim'
 Plug 'jaredgorski/SpaceCamp'
+Plug 'nanotech/jellybeans.vim'
+Plug 'connorholyday/vim-snazzy'
+Plug 'itchyny/landscape.vim'
 
 Plug 'kien/rainbow_parentheses.vim'
 
