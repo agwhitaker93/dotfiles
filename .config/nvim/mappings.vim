@@ -30,13 +30,15 @@ nmap <Leader>fr :Ntree
 " editor mappings
 nmap <Leader>en :set invnumber invrelativenumber<CR>
 nmap <Leader>es /<C-R>+<CR>
+nmap <Leader>er :Rg 
+nmap <Leader>eR :Rg<CR>
 
 " vim mappings
 nmap <Leader>ve :vsp $MYVIMRC<CR>
 nmap <Leader>vr :source $MYVIMRC<CR>
 
 " Show me my mappings
-nmap <Leader>mM :Maps<CR>'space>
+nmap <Leader>mm :Maps<CR>'space>
 nmap <Leader>mb :Maps<CR>'space>b
 nmap <Leader>me :Maps<CR>'space>e
 nmap <Leader>mf :Maps<CR>'space>f

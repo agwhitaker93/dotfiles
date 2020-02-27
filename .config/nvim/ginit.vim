@@ -1,7 +1,7 @@
 if has('macunix')
-    GuiFont Roboto Mono for Powerline:h13
+    GuiFont Source Code Pro:h12
 else
-    GuiFont! Roboto Mono for Powerline:h11
+    GuiFont Source Code Pro:h11
 endif
 
 call GuiWindowMaximized(1)
