@@ -1,3 +1,6 @@
 [submodule ".config/zsh/lib/antigen"]
 	path = .config/zsh/lib/antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/syl20bnr/spacemacs
