@@ -1,0 +1,4 @@
+sdk=$1
+version=$2
+provider=$3
+sdk use ${sdk} `sdk-installed $@`

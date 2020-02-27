@@ -1,0 +1,8 @@
+sdk=$1
+version=$2
+provider=$3
+if [ ${sdk} = 'java' ]; then
+    sdk ls ${sdk} | grep ${version:-''} | grep ${provider:-''} | grep installed | grep -o '\S*-'${provider:-'\S*'}
+else
+    sdk ls ${sdk} | grep ${version:-''} | grep -o '\*\ \S*' | grep -o '\S*$'
+fi
