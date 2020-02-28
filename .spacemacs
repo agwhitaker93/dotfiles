@@ -61,7 +61,6 @@ This function should only modify configuration layer settings."
      org
      neotree
      emoji
-     selectric
      deft
      pdf
      themes-megapack
