@@ -49,7 +49,6 @@ This function should only modify configuration layer settings."
      spell-checking
      syntax-checking
      auto-completion
-     parinfer
      dash
      git
      version-control
@@ -65,7 +64,6 @@ This function should only modify configuration layer settings."
      pdf
      themes-megapack
      pandoc)
-     
 
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -251,7 +249,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font or prioritized list of fonts.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 12.0
+                               :size 10.0
                                :weight normal
                                :width normal)
 
@@ -496,6 +494,11 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (if (string-equal system-type "darwin")
+      (setq-default dotspacemacs-default-font '("Source Code Pro"
+                                                :size 12.0
+                                                :weight normal
+                                                :width normal)))
   )
 
 (defun dotspacemacs/user-load ()
