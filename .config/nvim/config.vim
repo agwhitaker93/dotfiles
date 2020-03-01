@@ -36,6 +36,7 @@ let g:sql_type_default = 'pgsql'
 " LSP stuff
 set cmdheight=2
 set signcolumn=yes
+let g:LanguageClient_autoStart = 1
 let g:deoplete#enable_at_startup = 1
 let g:echodoc#enable_at_startup = 1
 let g:echodoc#type = 'signature'
@@ -48,5 +49,6 @@ let g:LanguageClient_serverCommands = {
     \ 'typescript': ['/usr/local/bin/javascript-typescript-stdio'],
     \ 'vue': ['/usr/local/bin/vls'],
     \ 'crystal': ['$HOME/Dev/scry/bin/scry'],
+    \ 'go': ['$HOME/Dev/go/bin/go-langserver']
     \ }
 

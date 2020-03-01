@@ -1,2 +1,2 @@
-/usr/local/bin/nvim -i NONE -c PlugUpgrade -c PlugClean! -c PlugUpdate -c UpdateRemotePlugins -c quitall
+\nvim -i NONE -c PlugUpgrade -c PlugClean! -c PlugUpdate -c UpdateRemotePlugins -c quitall
 
