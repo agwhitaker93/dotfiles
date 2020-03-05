@@ -36,7 +36,7 @@ This function should only modify configuration layer settings."
      groovy
      java
      sql
-     python
+     (python :variables python-backend 'anaconda)
      clojure
      emacs-lisp
      shell-scripts
