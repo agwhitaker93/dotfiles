@@ -1,0 +1,7 @@
+    path_to_add=$(pwd)
+
+    if [[ "$#" -ge 1 ]]; then
+        path_to_padd="$@"
+    fi
+
+    set_gvar GTAGSLIBPATH ${path_to_add} '$GTAGSLIBPATH'

@@ -1,0 +1,22 @@
+file_location=$1
+filename=$(basename ${file_location}) # get filename
+filename=$(echo $filename | sed 's/z.//g') # trimg leading dots
+command=${@:2}
+hash_folder_path="$HOME/.config/zsh/hashes"
+hash_file_location="${hash_folder_path}/${filename}-hash"
+
+mkdir -p ${hash_folder_path}
+
+if [[ ! -a ${hash_file_location} ]]; then
+    echo "Not found file at $hash_file_location"
+    echo " " > ${hash_file_location}
+fi
+
+if [[ $(cat $hash_file_location) != $(md5 $file_location) ]]; then
+    echo "MD5 discrepancy"
+    echo "Executing command: ${command}"
+    sleep 2
+    eval $command
+    echo $(md5 $file_location) > ${hash_file_location}
+fi
+
