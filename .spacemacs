@@ -42,6 +42,7 @@ This function should only modify configuration layer settings."
      clojure
      emacs-lisp
      shell-scripts
+     vue
 
      ;; data
      csv
