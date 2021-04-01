@@ -1,0 +1,4 @@
+vars="${@:2}"
+bookmark="export $1=${vars// /:}"
+echo "${bookmark}" >> ~/.config/zsh/bookmarks.zsh
+eval "${bookmark}"

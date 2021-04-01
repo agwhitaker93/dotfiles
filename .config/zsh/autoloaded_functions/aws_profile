@@ -1,0 +1,8 @@
+if [[ $# -ge 1 ]]; then
+    profile="export AWS_PROFILE=$1"
+    eval ${profile}
+    echo ${profile} > $HOME/.config/zsh/aws_profile.zsh
+else
+    echo "Current AWS_PROFILE=${AWS_PROFILE}"
+    aws sts get-caller-identity --output text --query Arn
+fi

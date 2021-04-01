@@ -1,0 +1,6 @@
+if [[ "$#" -ge 1 ]]; then
+    set_bookmark $1 $PWD
+else
+    show_bookmarks
+fi
+
